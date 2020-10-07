@@ -23,8 +23,93 @@ jobs:
      
       - store_artifacts:
           path: src/PSSpred_v4/seq.dat
-          destination: circleci-docs
+          destination: seq.dat
           
       - store_artifacts:
           path: src/PSSpred_v4/seq.dat.ss
-          destination: circleci-docs
+          destination: seq.dat.ss
+       
+      - store_artifacts:
+          path: src/PSSpred_v4/protein.fasta
+          destination: protein.fasta
+          
+      - store_artifacts:
+          path: src/PSSpred_v4/seq.fasta
+          destination: seq.fasta
+ 
+      - store_artifacts:
+          path: src/PSSpred_v4/blast.out
+          destination: blast.out
+
+      - store_artifacts:
+          path: src/PSSpred_v4/psitmp.aux 
+          destination: psitmp.aux
+          
+      - store_artifacts:
+          path: src/PSSpred_v4/pssm.txt
+          destination: pssm.txt
+
+      - store_artifacts:
+          path: src/PSSpred_v4/psitmp.chk
+          destination: psitmp.chk
+    
+      - store_artifacts:
+          path: src/PSSpred_v4/psitmp.fasta
+          destination: psitmp.fasta
+          
+      - store_artifacts:
+          path: src/PSSpred_v4/psitmp.mn
+          destination: psitmp.mn
+          
+      - store_artifacts:
+          path: src/PSSpred_v4/psitmp.mtx
+          destination: psitmp.mtx
+  
+      - store_artifacts:
+          path: src/PSSpred_v4/psitmp.pn
+          destination: psitmp.pn
+  
+      - store_artifacts:
+          path: src/PSSpred_v4/freqccw 
+          destination: freqccw 
+          
+  
+      - store_artifacts:
+          path: src/PSSpred_v4/freqccwG 
+          destination: freqccwG
+       
+      - store_artifacts:
+          path: src/PSSpred_v4/mtx
+          destination: mtx
+          
+      - store_artifacts:
+          path: src/PSSpred_v4/profw
+          destination: profw
+          
+      - store_artifacts:
+          path: src/PSSpred_v4/output1.ss
+          destination: output1.ss
+          
+      - store_artifacts:
+          path: src/PSSpred_v4/output2.ss
+          destination: output2.ss
+         
+      - store_artifacts:
+          path: src/PSSpred_v4/output3.ss
+          destination: output3.ss
+          
+      - store_artifacts:
+          path: src/PSSpred_v4/output4.ss
+          destination: output4.ss
+          
+      - store_artifacts:
+          path: src/PSSpred_v4/output5.ss
+          destination: output5.ss
+         
+      - store_artifacts:
+          path: src/PSSpred_v4/output6.ss
+          destination: output6.ss
+          
+      - store_artifacts:
+          path: src/PSSpred_v4/output7.ss
+          destination: output7.ss

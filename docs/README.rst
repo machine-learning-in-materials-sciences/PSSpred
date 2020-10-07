@@ -1,7 +1,7 @@
-`PSSpred <https://github.com/nickcafferry/PSSpred>`_ 
+`PSSpred <https://github.com/nickcafferry/PSSpred>`_
 ===============
 
-|Documentation Status| |Appveyor| |Workflow| |Licence| |Travis| |Codecov| |Gitter| |Circleci|
+|Workflow| |Licence| |Travis| |Codecov| |Appveyor| |Documentation Status| |Gitter| |Circleci|
 
 .. |Workflow| image:: https://github.com/nickcafferry/PSSpred/workflows/PSSpred/badge.svg
    :target: https://github.com/nickcafferry/PSSpred/actions/runs/263139727
@@ -27,9 +27,8 @@
 .. |Documentation Status| image:: https://readthedocs.org/projects/psspred/badge/?version=latest
    :target: https://psspred.readthedocs.io/en/latest/?badge=latest
 
-Copyright |copy| Wei MEI, |MLMS (TM)| |---|
-all rights reserved. 
-|bamboo|
+Copyright |copy| Wei MEI, |MLMS (TM)| |---| all rights reserved. |bamboo|
+"""""""""""""""""""""""""
 
 .. |copy| unicode:: 0xA9 .. copyright sign
 .. |MLMS (TM)| unicode:: MLMS U+2122
@@ -39,19 +38,16 @@ all rights reserved.
 
 .. |bamboo| unicode:: 0x1F024 .. bamboo
 
-A simple `neural network training algorithm <https://www.verypossible.com/insights/machine-learning-algorithms-what-is-a-neural-network>`_ for accurate `protein secondary structure <https://proteinstructures.com/Structure/Structure/secondary-sructure.html>`_ prediction (`PSSpred <https://github.com/nickcafferry/PSSpred>`_ )! See `documentation <https://readthedocs.org/projects/psspred/badge/?version=latest>`_ for more details.
+A simple `neural network training algorithm <https://www.verypossible.com/insights/machine-learning-algorithms-what-is-a-neural-network>`_ for accurate `protein secondary structure <https://proteinstructures.com/Structure/Structure/secondary-sructure.html>`_ prediction !
 
-PSSpred (`Protein Secondary Structure <https://proteinstructures.com/Structure/Structure/secondary-sructure.html>`_ prediction) is a simple `neural network training algorithm <https://www.verypossible.com/insights/machine-learning-algorithms-what-is-a-neural-network>`_ for accurate `protein secondary structure <https://proteinstructures.com/Structure/Structure/secondary-sructure.html>`_ prediction. It first collects multiple sequence alignments using `PSI-BLAST <https://www.ebi.ac.uk/Tools/sss/psiblast/>`_. Amino-acid frequence and log-odds data with `Henikoff weights <https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/structural-property-of-proteins>`_ are then used to train secondary structure, separately, based on the `Rumelhart error backpropagation method <https://www.sciencedirect.com/topics/engineering/backpropagation-algorithm>`_. The final secondary structure prediction result is a combination of 7 neural network predictors from different profile data and parameters. The program is freely downloadable on this page.
+PSSpred (`Protein Secondary Structure <https://proteinstructures.com/Structure/Structure/secondary-sructure.html>`_ prediction) is a simple `neural network training algorithm <https://www.verypossible.com/insights/machine-learning-algorithms-what-is-a-neural-network>`_ for accurate `protein secondary structure <https://proteinstructures.com/Structure/Structure/secondary-sructure.html>`_ prediction. It first collects multiple sequence alignments using `PSI-BLAST <https://www.ebi.ac.uk/Tools/sss/psiblast/>`_. Amino-acid frequence and log-odds data with `Henikoff weights <https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/structural-property-of-proteins>`_ are then used to train `secondary structure <https://proteinstructures.com/Structure/Structure/secondary-sructure.html>`_, separately, based on the `Rumelhart error backpropagation method <https://www.sciencedirect.com/topics/engineering/backpropagation-algorithm>`_. The final secondary structure prediction result is a combination of `7 neural network predictors <https://github.com/nickcafferry/PSSpred/tree/master/src/PSSpred_v4>`_ from different profile data and parameters. The program is freely downloadable on this page.
 
 We have a community chat at `Gitter <https://gitter.im/PSSpred/community#>`_. Feel free to ask us anything there. We have a very welcoming and helpful community.
 
 .. raw:: html
-   
-   <div align="center">
-     <img border="0"  src="https://zhanglab.ccmb.med.umich.edu/COVID-19/QHD43415_1.png" width="300">
-   </div>
+   :file: 1BTN.html
 
-Installation
+**Installation**
 -------
 
 No installation is needed! 
@@ -60,7 +56,7 @@ Simply fork this project and edit the file ```seq.fasta``` (file path: src/PSSpr
 
 .. image:: https://avatars3.githubusercontent.com/in/15368?s=64&v=4
    :target: https://github.com/features/actions
-Github-Actions
+*Github-Actions*
 ^^^^^^^^^^^^^
 
 .. code:: yaml
@@ -116,15 +112,15 @@ Github-Actions
            name: output results
            path: /home/runner/work/PSSpred/output/ 
 
-Not familiar with ```FASTA format```? Don't panick, this project is very user-friendly. You can type the following protein sequence::
+Not familiar with ```FASTA format``` ? Don't panick, this project is very user-friendly. You can type the following protein sequence::
    
    MVLSEGEWQLVLHVWAKVEADVAGHGQDILIRLFKSHPETLEKFDRVKHLKTEAEMKASEDLKKHGVTVLTALGAILKKKGHHEAELKPLAQSHATKHKIPIKYLEFISEAIIHVLHSRHPGNFGADAQLELGAMNKAFRKDIAAKYKELGYQG
 
-in ```seq_1.txt``` simply, and upload to the directory (path: src/PSSpred_v4/). Wait for almost 8 minutes (check Appveyor build status: pending? failing? passing?), download the `output files <https://ci.appveyor.com/project/nickcafferry/psspred/builds/35307987/artifacts>`_ when the job is done.
+in ```seq_1.txt``` simply, and upload to the directory (path: src/PSSpred_v4/). Wait for almost 8 minutes (check Appveyor build status: pending? failed? passing?), download the `output files <https://ci.appveyor.com/project/nickcafferry/psspred/builds/35307987/artifacts>`_ when the job is done.
 
 .. image:: https://avatars3.githubusercontent.com/ml/11?s=62&v=4
    :target: https://www.appveyor.com/
-Appveyor
+*Appveyor*
 ^^^^^^^^
 
 .. code:: yaml
@@ -162,7 +158,7 @@ If you prefer to use CircleCI other than Appveyor, it is alright. Just edit the 
 
 .. image:: https://avatars3.githubusercontent.com/ml/7?s=62&v=4
    :target: https://circleci.com/
-CircleCI(file path: .circleci/config.yml)
+*CircleCI(file path: .circleci/config.yml)*
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code:: yaml
@@ -203,7 +199,7 @@ CircleCI(file path: .circleci/config.yml)
              destination: protein.fasta
 
 
-Download
+**Download**
 --------
 
 To get the git version do
@@ -221,12 +217,12 @@ Or simply download the repository using the official Github CLI
 You can also click `here <https://zhanglab.ccmb.med.umich.edu/PSSpred/PSSpred_v4.tar.bz2>`_ to download PSSpred package version 4, and `v3 <https://zhanglab.ccmb.med.umich.edu/PSSpred/PSSpred_v3.tar.gz>`_, `v2 <https://zhanglab.ccmb.med.umich.edu/PSSpred/PSSpred_v2.tar.gz>`_, `v1 <https://zhanglab.ccmb.med.umich.edu/PSSpred/PSSpred_v1.tar.gz>`_. Also, you can download the whole package by clicking `source code.zip <https://github.com/nickcafferry/PSSpred/archive/Protein-Secondary-Structure-prediction.zip>`_ or `source code.tar.gz <https://github.com/nickcafferry/PSSpred/archive/Protein-Secondary-Structure-prediction.tar.gz>`_.
 
 
-Usage
+**Usage**
 -----
 
 Simply edit the file ```seq.fasta```, or ```seq_1.txt``` or ```seq_2.txt```, or you can upload your own sequence file and change the workflow file (PSSPred.yml, appveyor.yml, config.yml) correspondinlgy. 
 
-About Protein Sequence
+*About Protein Sequence*
 ^^^^^^^^^^^^^^^^^^^^^^
 
 Sequences are expected to be represented in the standard IUB/IUPAC amino acid and nucleic acid codes, with these exceptions:
@@ -269,7 +265,7 @@ The accepted amino acid codes are:
     M MET methionine                      *     translation stop
     N ASN asparagine                      -     gap of indeterminate length
 
-Notes
+*Notes*
 ^^^^^^^^^^^
 
 - seq.txt is fasta file at current directory (the only input file). If you know about `FASTA format`, you can always use that format.
@@ -285,7 +281,7 @@ Notes
    b. prepare mtx, pssm.txt, profw, freqccw, freqccwG
    c. run PSSpred and generate output files
 
-Example input file
+*Example input file*
 ^^^^^^^^^^^^^^^^^^^^
 Input file: seq_1.txt(src/PSSpred_v4/seq_1.txt)
 
@@ -297,7 +293,7 @@ Input file: seq_1.txt(src/PSSpred_v4/seq_1.txt)
    VLLRKNGNKGAGGHSYGADLKSFDLGDELGTDPYEDFQEN
    WNTKHSSGVTRELMRELNGG   
 
-Snapshot of seq.dat
+*Snapshot of seq.dat*
 ^^^^^^^^^^^^^^^^^^
 
 .. code:: python
@@ -323,7 +319,7 @@ Snapshot of seq.dat
       19   PRO    4    5
       20   VAL    4    5
 
-Snapshot of seq.dat.ss
+*Snapshot of seq.dat.ss*
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code:: python
@@ -352,7 +348,7 @@ Snapshot of seq.dat.ss
         20 V E  0.229  0.012  0.760 
 
 
-FASTA format
+**FASTA format**
 ------------
 
 FASTA format is a text-based format for representing either nucleotide sequences or peptide sequences, in which base pairs or amino acids are represented using single-letter codes. A sequence in FASTA format begins with a single-line description, followed by lines of sequence data. The description line is distinguished from the sequence data by a greater-than (">") symbol in the first column. It is recommended that all lines of text be shorter than 80 characters in length.
@@ -367,12 +363,12 @@ An example sequence in FASTA format is:
    QHLSWGGDFPEEAQPFFSPAFLWTRPQETAVVETQVFAAFKDYLKAYLDFVEQAEAVTDSQNLVAIKQAQ
    LRYLRYRAEKDPARGMFKRFYGAEWTEEYIHGFLFDLERKLTVVK
    
-Contributing
+**Contributing**
 ------------
 
 This project welcomes contributions and suggestions. Most contributions require you to agree to a `MIT LICENCE <https://github.com/nickcafferry/PSSpred/blob/master/LICENSE>`_ (MIT LIC) declaring that you have the right to, and actually do, grant us the rights to use your contribution. For details, visit `Code of Conduct <https://github.com/nickcafferry/PSSpred/blob/master/CODE_OF_CONDUCT.md>`_.
 
-Refrence
+**Refrence**
 --------
 
 Renxiang Yan, Dong Xu, Jianyi Yang, Sara Walker, Yang Zhang. `A comparative assessment and analysis of 20 representative sequence alignment methods for protein structure prediction <https://zhanglab.ccmb.med.umich.edu/papers/2013_18.pdf>`_. Scientific Reports, 3: 2619 (2013). 
